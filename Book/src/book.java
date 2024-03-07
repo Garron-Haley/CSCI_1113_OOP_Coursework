@@ -2,17 +2,22 @@
 public class book {
 
 	public static void main(String[] args) {
-		MyInteger user = new MyInteger("sixty");
+		char[] p ={'1','9'};
+		MyInteger user = new MyInteger("17");
 		System.out.println(user.isEven());
 		System.out.println(user.isOdd());
 		System.out.println(user.isPrime());
-		System.out.println(MyInteger.isEven(user));
-		System.out.println(MyInteger.isOdd(user));
-		System.out.println(MyInteger.isPrime(user));
+		System.out.println(MyInteger.isEven(4));
+		System.out.println(MyInteger.isOdd(4));
+		System.out.println(MyInteger.isPrime(4));
 		MyInteger.value = 19;
 		System.out.println(MyInteger.isEven(user));
 		System.out.println(MyInteger.isOdd(user));
 		System.out.println(MyInteger.isPrime(user));
+		MyInteger user2 = new MyInteger(p);
+		System.out.println(MyInteger.isEven(user2));
+		System.out.println(MyInteger.isOdd(user2));
+		System.out.println(MyInteger.isPrime(user2));
 		
 	}
 
