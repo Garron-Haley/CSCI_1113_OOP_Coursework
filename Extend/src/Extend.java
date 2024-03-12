@@ -48,8 +48,13 @@ abstract class GeometricObject {
 	}
 	abstract double getArea();
 	abstract double perimeter();
+	public interface Colorable {
+		abstract void howToColor();
+			
+		
+	}
 }
-class Triangle extends GeometricObject {
+class Triangle extends GeometricObject implements Colorable {
 	double side1;
 	double side2;
 	double side3;
@@ -69,6 +74,9 @@ class Triangle extends GeometricObject {
 	}
 	double perimeter() {
 		return side1 + side2 + side3;
+	}
+	public String howToColor() {
+		return "with a crayon";
 	}
 }
 public class Extend {
